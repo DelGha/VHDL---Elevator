@@ -1,0 +1,2 @@
+vhdl isim_temp "up_down_counter.vhd"
+vhdl isim_temp "TEST.vhd"

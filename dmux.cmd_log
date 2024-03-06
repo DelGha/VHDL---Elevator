@@ -1,0 +1,44 @@
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+par -w -intstyle ise -ol high -mt off dmux_map.ncd dmux.ncd dmux.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml dmux.twx dmux.ncd -o dmux.twr dmux.pcf 
+bitgen -intstyle ise -f dmux.ut dmux.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/dmux.xst" -ofn "C:/My_Designs/LIFT/dmux.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 dmux.ngc dmux.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o dmux_map.ncd dmux.ngd dmux.pcf 

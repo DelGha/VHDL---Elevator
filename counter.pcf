@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 09 18:05:12 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "O<0>" LOCATE = SITE "V15" LEVEL 1;
+COMP "O<1>" LOCATE = SITE "U15" LEVEL 1;
+COMP "O<2>" LOCATE = SITE "V16" LEVEL 1;
+COMP "O<3>" LOCATE = SITE "U16" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+COMP "RESET" LOCATE = SITE "C4" LEVEL 1;
+SCHEMATIC END;
+

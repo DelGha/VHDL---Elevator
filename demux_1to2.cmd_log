@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/demux_1to2.xst" -ofn "C:/My_Designs/LIFT/demux_1to2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 demux_1to2.ngc demux_1to2.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o demux_1to2_map.ncd demux_1to2.ngd demux_1to2.pcf 
+par -w -intstyle ise -ol high -mt off demux_1to2_map.ncd demux_1to2.ncd demux_1to2.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml demux_1to2.twx demux_1to2.ncd -o demux_1to2.twr demux_1to2.pcf 
+bitgen -intstyle ise -f demux_1to2.ut demux_1to2.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/demux_1to2.xst" -ofn "C:/My_Designs/LIFT/demux_1to2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 demux_1to2.ngc demux_1to2.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o demux_1to2_map.ncd demux_1to2.ngd demux_1to2.pcf 
+par -w -intstyle ise -ol high -mt off demux_1to2_map.ncd demux_1to2.ncd demux_1to2.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml demux_1to2.twx demux_1to2.ncd -o demux_1to2.twr demux_1to2.pcf 
+bitgen -intstyle ise -f demux_1to2.ut demux_1to2.ncd 

@@ -1,0 +1,46 @@
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 frequency_divider.ngc frequency_divider.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o frequency_divider_map.ncd frequency_divider.ngd frequency_divider.pcf 
+par -w -intstyle ise -ol high -mt off frequency_divider_map.ncd frequency_divider.ncd frequency_divider.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml frequency_divider.twx frequency_divider.ncd -o frequency_divider.twr frequency_divider.pcf 
+bitgen -intstyle ise -f frequency_divider.ut frequency_divider.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/AFISOR.xst" -ofn "C:/My_Designs/LIFT/AFISOR.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 frequency_divider.ngc frequency_divider.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o frequency_divider_map.ncd frequency_divider.ngd frequency_divider.pcf 
+par -w -intstyle ise -ol high -mt off frequency_divider_map.ncd frequency_divider.ncd frequency_divider.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml frequency_divider.twx frequency_divider.ncd -o frequency_divider.twr frequency_divider.pcf 
+bitgen -intstyle ise -f frequency_divider.ut frequency_divider.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 frequency_divider.ngc frequency_divider.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o frequency_divider_map.ncd frequency_divider.ngd frequency_divider.pcf 
+par -w -intstyle ise -ol high -mt off frequency_divider_map.ncd frequency_divider.ncd frequency_divider.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml frequency_divider.twx frequency_divider.ncd -o frequency_divider.twr frequency_divider.pcf 
+bitgen -intstyle ise -f frequency_divider.ut frequency_divider.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 frequency_divider.ngc frequency_divider.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o frequency_divider_map.ncd frequency_divider.ngd frequency_divider.pcf 
+par -w -intstyle ise -ol high -mt off frequency_divider_map.ncd frequency_divider.ncd frequency_divider.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml frequency_divider.twx frequency_divider.ncd -o frequency_divider.twr frequency_divider.pcf 
+bitgen -intstyle ise -f frequency_divider.ut frequency_divider.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 frequency_divider.ngc frequency_divider.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o frequency_divider_map.ncd frequency_divider.ngd frequency_divider.pcf 
+par -w -intstyle ise -ol high -mt off frequency_divider_map.ncd frequency_divider.ncd frequency_divider.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml frequency_divider.twx frequency_divider.ncd -o frequency_divider.twr frequency_divider.pcf 
+bitgen -intstyle ise -f frequency_divider.ut frequency_divider.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/frequency_divider.xst" -ofn "C:/My_Designs/LIFT/frequency_divider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 frequency_divider.ngc frequency_divider.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o frequency_divider_map.ncd frequency_divider.ngd frequency_divider.pcf 
+par -w -intstyle ise -ol high -mt off frequency_divider_map.ncd frequency_divider.ncd frequency_divider.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml frequency_divider.twx frequency_divider.ncd -o frequency_divider.twr frequency_divider.pcf 
+bitgen -intstyle ise -f frequency_divider.ut frequency_divider.ncd 

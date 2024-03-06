@@ -1,0 +1,142 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml AFISOR.twx AFISOR.ncd -o AFISOR.twr AFISOR.pcf -ucf
+file.ucf
+
+Design file:              AFISOR.ncd
+Physical constraint file: AFISOR.pcf
+Device,package,speed:     xc6slx16,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLOCK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+RESET       |    6.160(R)|      SLOW  |   -1.359(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLOCK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+ANOD<0>     |         9.447(R)|      SLOW  |         4.141(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+ANOD<1>     |         9.747(R)|      SLOW  |         4.315(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+ANOD<2>     |         9.525(R)|      SLOW  |         4.176(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+ANOD<3>     |         9.664(R)|      SLOW  |         4.248(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+CATOD<0>    |        12.312(R)|      SLOW  |         5.156(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+CATOD<1>    |        12.147(R)|      SLOW  |         5.225(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+CATOD<2>    |        12.285(R)|      SLOW  |         4.948(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+CATOD<3>    |        12.010(R)|      SLOW  |         4.806(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+CATOD<4>    |        12.653(R)|      SLOW  |         5.376(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+CATOD<5>    |        12.731(R)|      SLOW  |         5.427(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+CATOD<6>    |        12.306(R)|      SLOW  |         5.299(R)|      FAST  |CLOCK_BUFGP       |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK          |    4.020|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+D1<0>          |CATOD<0>       |   10.398|
+D1<0>          |CATOD<1>       |   10.539|
+D1<0>          |CATOD<2>       |   10.635|
+D1<0>          |CATOD<3>       |   10.360|
+D1<0>          |CATOD<4>       |   11.353|
+D1<0>          |CATOD<5>       |   11.431|
+D1<0>          |CATOD<6>       |   10.698|
+D1<1>          |CATOD<0>       |   10.923|
+D1<1>          |CATOD<1>       |   10.995|
+D1<1>          |CATOD<2>       |   11.269|
+D1<1>          |CATOD<3>       |   10.994|
+D1<1>          |CATOD<4>       |   11.208|
+D1<1>          |CATOD<5>       |   11.286|
+D1<1>          |CATOD<6>       |   11.154|
+D1<2>          |CATOD<0>       |   10.674|
+D1<2>          |CATOD<1>       |   10.924|
+D1<2>          |CATOD<2>       |   11.052|
+D1<2>          |CATOD<3>       |   10.777|
+D1<2>          |CATOD<4>       |   11.109|
+D1<2>          |CATOD<5>       |   11.187|
+D1<2>          |CATOD<6>       |   11.083|
+D1<3>          |CATOD<0>       |   12.090|
+D1<3>          |CATOD<1>       |   11.923|
+D1<3>          |CATOD<2>       |   11.377|
+D1<3>          |CATOD<3>       |   11.102|
+D1<3>          |CATOD<4>       |   12.023|
+D1<3>          |CATOD<5>       |   12.101|
+D1<3>          |CATOD<6>       |   12.082|
+D2<0>          |CATOD<0>       |   10.478|
+D2<0>          |CATOD<1>       |   10.619|
+D2<0>          |CATOD<2>       |   10.715|
+D2<0>          |CATOD<3>       |   10.440|
+D2<0>          |CATOD<4>       |   11.433|
+D2<0>          |CATOD<5>       |   11.511|
+D2<0>          |CATOD<6>       |   10.778|
+D2<1>          |CATOD<0>       |   10.896|
+D2<1>          |CATOD<1>       |   10.968|
+D2<1>          |CATOD<2>       |   11.242|
+D2<1>          |CATOD<3>       |   10.967|
+D2<1>          |CATOD<4>       |   11.181|
+D2<1>          |CATOD<5>       |   11.259|
+D2<1>          |CATOD<6>       |   11.127|
+D2<2>          |CATOD<0>       |   10.464|
+D2<2>          |CATOD<1>       |   10.714|
+D2<2>          |CATOD<2>       |   10.842|
+D2<2>          |CATOD<3>       |   10.567|
+D2<2>          |CATOD<4>       |   10.899|
+D2<2>          |CATOD<5>       |   10.977|
+D2<2>          |CATOD<6>       |   10.873|
+D2<3>          |CATOD<0>       |   11.333|
+D2<3>          |CATOD<1>       |   11.166|
+D2<3>          |CATOD<2>       |   10.620|
+D2<3>          |CATOD<3>       |   10.345|
+D2<3>          |CATOD<4>       |   11.266|
+D2<3>          |CATOD<5>       |   11.344|
+D2<3>          |CATOD<6>       |   11.325|
+---------------+---------------+---------+
+
+
+Analysis completed Fri May 20 18:13:37 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4585 MB
+
+
+

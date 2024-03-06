@@ -1,0 +1,5 @@
+vhdl isim_temp "up_down_counter.vhd"
+vhdl isim_temp "or.vhd"
+vhdl isim_temp "comp_4_bits.vhd"
+vhdl isim_temp "PERS_LIFT.vhd"
+vhdl isim_temp "test_pers.vhd"

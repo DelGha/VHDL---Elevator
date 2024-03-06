@@ -1,0 +1,64 @@
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FILE_PERS.ucf -p xc6slx16-csg324-2 PERS_LIFT.ngc PERS_LIFT.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PERS_LIFT_map.ncd PERS_LIFT.ngd PERS_LIFT.pcf 
+par -w -intstyle ise -ol high -mt off PERS_LIFT_map.ncd PERS_LIFT.ncd PERS_LIFT.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml PERS_LIFT.twx PERS_LIFT.ncd -o PERS_LIFT.twr PERS_LIFT.pcf -ucf FILE_PERS.ucf 
+bitgen -intstyle ise -f PERS_LIFT.ut PERS_LIFT.ncd 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/PERS_LIFT.xst" -ofn "C:/My_Designs/LIFT/PERS_LIFT.syr" 

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri May 20 15:57:00 2022
+# Process ID: 17716
+# Log file: C:/My_Designs/LIFT/planAhead_run_1/planAhead.log
+# Journal file: C:/My_Designs/LIFT/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/My_Designs/LIFT/pa.fromNetlist.tcl

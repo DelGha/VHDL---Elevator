@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed May 25 19:52:30 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "DOWN" LOCATE = SITE "C9" LEVEL 1;
+COMP "ERROR" LOCATE = SITE "T11" LEVEL 1;
+COMP "FLOOR_NR<0>" LOCATE = SITE "N8" LEVEL 1;
+COMP "FLOOR_NR<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "FLOOR_NR<2>" LOCATE = SITE "V8" LEVEL 1;
+COMP "FLOOR_NR<3>" LOCATE = SITE "T5" LEVEL 1;
+COMP "SPEED_SWITCH" LOCATE = SITE "T10" LEVEL 1;
+COMP "ERROR_IN" LOCATE = SITE "D9" LEVEL 1;
+COMP "UP" LOCATE = SITE "A8" LEVEL 1;
+COMP "START_LIFT" LOCATE = SITE "B8" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+SCHEMATIC END;
+

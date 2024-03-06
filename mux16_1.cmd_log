@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/mux16_1.xst" -ofn "C:/My_Designs/LIFT/mux16_1.syr" 

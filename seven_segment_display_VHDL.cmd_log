@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/seven_segment_display_VHDL.xst" -ofn "C:/My_Designs/LIFT/seven_segment_display_VHDL.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/seven_segment_display_VHDL.xst" -ofn "C:/My_Designs/LIFT/seven_segment_display_VHDL.syr" 
+xst -intstyle ise -ifn "C:/My_Designs/LIFT/seven_segment_display_VHDL.xst" -ofn "C:/My_Designs/LIFT/seven_segment_display_VHDL.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc file_.ucf -p xc6slx16-csg324-2 seven_segment_display_VHDL.ngc seven_segment_display_VHDL.ngd  

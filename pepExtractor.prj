@@ -1,0 +1,4 @@
+work	"PERS_LIFT.vhd"
+work	"comp_4_bits.vhd"
+work	"or.vhd"
+work	"up_down_counter.vhd"

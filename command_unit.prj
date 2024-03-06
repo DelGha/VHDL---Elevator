@@ -1,0 +1,6 @@
+vhdl work "mux_n.vhd"
+vhdl work "Memory.vhd"
+vhdl work "DFF.vhd"
+vhdl work "Decod.vhd"
+vhdl work "state_block.vhd"
+vhdl work "CommandU.vhd"

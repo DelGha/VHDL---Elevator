@@ -1,0 +1,5 @@
+vhdl work "Mux_Com_Unit.vhd"
+vhdl work "Memory.vhd"
+vhdl work "DFF.vhd"
+vhdl work "Decod.vhd"
+vhdl work "state_block.vhd"

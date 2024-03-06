@@ -1,0 +1,7 @@
+vhdl isim_temp "D-Flip-FLop.vhd"
+vhdl isim_temp "up_down_counter.vhd"
+vhdl isim_temp "or.vhd"
+vhdl isim_temp "Debouncer.vhd"
+vhdl isim_temp "comp_4_bits.vhd"
+vhdl isim_temp "Main.vhd"
+vhdl isim_temp "TEST_MAIN.vhd"

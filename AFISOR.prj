@@ -1,0 +1,4 @@
+vhdl work "REGISTRU.vhd"
+vhdl work "mux16_1.vhd"
+vhdl work "DECOD-BCD7.vhd"
+vhdl work "SSD-TEST.vhd"

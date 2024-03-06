@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue May 10 13:25:38 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "O1" LOCATE = SITE "T11" LEVEL 1;
+COMP "O2" LOCATE = SITE "R11" LEVEL 1;
+COMP "I" LOCATE = SITE "T5" LEVEL 1;
+COMP "S" LOCATE = SITE "V8" LEVEL 1;
+SCHEMATIC END;
+

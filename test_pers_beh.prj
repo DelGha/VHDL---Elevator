@@ -1,0 +1,5 @@
+vhdl work "up_down_counter.vhd"
+vhdl work "or.vhd"
+vhdl work "comp_4_bits.vhd"
+vhdl work "PERS_LIFT.vhd"
+vhdl work "test_pers.vhd"

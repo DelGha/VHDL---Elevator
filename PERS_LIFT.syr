@@ -1,0 +1,414 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: PERS_LIFT.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PERS_LIFT.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PERS_LIFT"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : PERS_LIFT
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\My_Designs\LIFT\up_down_counter.vhd" into library work
+Parsing entity <updown_count>.
+Parsing architecture <Behavioral> of entity <updown_count>.
+Parsing VHDL file "C:\My_Designs\LIFT\or.vhd" into library work
+Parsing entity <org>.
+Parsing architecture <arh> of entity <org>.
+Parsing VHDL file "C:\My_Designs\LIFT\comp_4_bits.vhd" into library work
+Parsing entity <Comparator>.
+Parsing architecture <arh> of entity <comparator>.
+Parsing VHDL file "C:\My_Designs\LIFT\PERS_LIFT.vhd" into library work
+Parsing entity <PERS_LIFT>.
+Parsing architecture <Behavioral> of entity <pers_lift>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <PERS_LIFT> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <updown_count> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Comparator> (architecture <arh>) from library <work>.
+
+Elaborating entity <org> (architecture <arh>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PERS_LIFT>.
+    Related source file is "C:\My_Designs\LIFT\PERS_LIFT.vhd".
+INFO:Xst:3210 - "C:\My_Designs\LIFT\PERS_LIFT.vhd" line 43: Output port <smaller> of the instance <P4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <PERS_LIFT> synthesized.
+
+Synthesizing Unit <updown_count>.
+    Related source file is "C:\My_Designs\LIFT\up_down_counter.vhd".
+    Found 4-bit register for signal <TEMP>.
+    Found 4-bit adder for signal <TEMP[3]_GND_6_o_add_0_OUT> created at line 20.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_2_OUT<3:0>> created at line 22.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <updown_count> synthesized.
+
+Synthesizing Unit <Comparator>.
+    Related source file is "C:\My_Designs\LIFT\comp_4_bits.vhd".
+    Found 4-bit comparator greater for signal <greater> created at line 32
+    Found 4-bit comparator greater for signal <A[3]_B[3]_LessThan_2_o> created at line 34
+    Summary:
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <Comparator> synthesized.
+
+Synthesizing Unit <org>.
+    Related source file is "C:\My_Designs\LIFT\or.vhd".
+    Summary:
+	no macro.
+Unit <org> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 4-bit addsub                                          : 1
+# Registers                                            : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 2
+ 4-bit comparator greater                              : 2
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <updown_count>.
+The following registers are absorbed into counter <TEMP>: 1 register on signal <TEMP>.
+Unit <updown_count> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 4-bit updown counter                                  : 1
+# Comparators                                          : 2
+ 4-bit comparator greater                              : 2
+# Multiplexers                                         : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PERS_LIFT> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PERS_LIFT, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PERS_LIFT.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 6
+#      INV                         : 1
+#      LUT2                        : 2
+#      LUT4                        : 1
+#      LUT5                        : 1
+#      LUT6                        : 1
+# FlipFlops/Latches                : 4
+#      FDE                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 3
+#      IBUF                        : 2
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               4  out of  18224     0%  
+ Number of Slice LUTs:                    6  out of   9112     0%  
+    Number used as Logic:                 6  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     10
+   Number with an unused Flip Flop:       6  out of     10    60%  
+   Number with an unused LUT:             4  out of     10    40%  
+   Number of fully used LUT-FF pairs:     0  out of     10     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   4  out of    232     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 4     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.338ns (Maximum Frequency: 427.716MHz)
+   Minimum input arrival time before clock: 3.595ns
+   Maximum output required time after clock: 5.202ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.338ns (frequency: 427.716MHz)
+  Total number of paths / destination ports: 10 / 4
+-------------------------------------------------------------------------
+Delay:               2.338ns (Levels of Logic = 1)
+  Source:            P3/TEMP_0 (FF)
+  Destination:       P3/TEMP_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: P3/TEMP_0 to P3/TEMP_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.525   0.803  P3/TEMP_0 (P3/TEMP_0)
+     INV:I->O              1   0.255   0.681  P3/Mcount_TEMP_xor<0>11_INV_0 (Result<0>)
+     FDE:D                     0.074          P3/TEMP_0
+    ----------------------------------------
+    Total                      2.338ns (0.854ns logic, 1.484ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 14 / 7
+-------------------------------------------------------------------------
+Offset:              3.595ns (Levels of Logic = 2)
+  Source:            UP (PAD)
+  Destination:       P3/TEMP_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: UP to P3/TEMP_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.328   0.912  UP_IBUF (UP_IBUF)
+     LUT2:I0->O            4   0.250   0.803  P3/_n0022_inv1 (P3/_n0022_inv)
+     FDE:CE                    0.302          P3/TEMP_0
+    ----------------------------------------
+    Total                      3.595ns (1.880ns logic, 1.715ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              5.202ns (Levels of Logic = 2)
+  Source:            P3/TEMP_3 (FF)
+  Destination:       ERROR (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: P3/TEMP_3 to ERROR
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.834  P3/TEMP_3 (P3/TEMP_3)
+     LUT2:I0->O            1   0.250   0.681  P5/Z1 (ERROR_OBUF)
+     OBUF:I->O                 2.912          ERROR_OBUF (ERROR)
+    ----------------------------------------
+    Total                      5.202ns (3.687ns logic, 1.515ns route)
+                                       (70.9% logic, 29.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.338|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.03 secs
+ 
+--> 
+
+Total memory usage is 4452552 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
